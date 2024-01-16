@@ -1,0 +1,1228 @@
+go athena
+################### OXIDATION PROCESS FOR DRY AMBIENT AND <100> ORIENTATION (CHLORINE AND PRESSURE IS SET TO DEFAULT) ######################
+###### At 1200 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 10 minutes##
+diffuse time=10 temperature=1200 dryO2
+struct outfile=10min@1200d_DryO2_100Ori.str
+extract name="10min@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=50 temperature=1200 dryO2
+struct outfile=1h@1200d_DryO2_100Ori.str
+extract name="1h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1200 dryO2
+struct outfile=3h@1200d_DryO2_100Ori.str
+extract name="3h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1200 dryO2
+struct outfile=6h@1200d_DryO2_100Ori.str
+extract name="6h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=1200 dryO2
+struct outfile=8h@1200d_DryO2_100Ori.str
+extract name="8h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=1200 dryO2
+struct outfile=10h@1200d_DryO2_100Ori.str
+extract name="10h@1200D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 10min@1200d_DryO2_100Ori.str 1h@1200d_DryO2_100Ori.str 3h@1200d_DryO2_100Ori.str 6h@1200d_DryO2_100Ori.str 8h@1200d_DryO2_100Ori.str 10h@1200d_DryO2_100Ori.str
+###### At 1100 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 10 minutes##
+
+diffuse time=10 temperature=1100 dryO2
+struct outfile=10min@1100d_DryO2_100Ori.str
+extract name="10min@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=50 temperature=1100 dryO2
+struct outfile=1h@1100d_DryO2_100Ori.str
+extract name="1h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1100 dryO2
+struct outfile=3h@1100d_DryO2_100Ori.str
+extract name="3h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1100 dryO2
+struct outfile=6h@1100d_DryO2_100Ori.str
+extract name="6h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=1100 dryO2
+struct outfile=8h@1100d_DryO2_100Ori.str
+extract name="8h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=1100 dryO2
+struct outfile=10h@1100d_DryO2_100Ori.str
+extract name="10h@1100D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 10min@1100d_DryO2_100Ori.str 1h@1100d_DryO2_100Ori.str 3h@1100d_DryO2_100Ori.str 6h@1100d_DryO2_100Ori.str 8h@1100d_DryO2_100Ori.str 10h@1100d_DryO2_100Ori.str
+###### At 1000 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 10 minutes##
+diffuse time=10 temperature=1000 dryO2
+struct outfile=10min@1000d_DryO2_100Ori.str
+extract name="10min@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=50 temperature=1000 dryO2
+struct outfile=1h@1000d_DryO2_100Ori.str
+extract name="1h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1000 dryO2
+struct outfile=3h@1000d_DryO2_100Ori.str
+extract name="3h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1000 dryO2
+struct outfile=6h@1000d_DryO2_100Ori.str
+extract name="6h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=1000 dryO2
+struct outfile=8h@1000d_DryO2_100Ori.str
+extract name="8h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=1000 dryO2
+
+struct outfile=10h@1000d_DryO2_100Ori.str
+extract name="10h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=1000 dryO2
+struct outfile=20h@1000d_DryO2_100Ori.str
+extract name="20h@1000D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 1h@1000d_DryO2_100Ori.str 3h@1000d_DryO2_100Ori.str 6h@1000d_DryO2_100Ori.str 8h@1000d_DryO2_100Ori.str 10h@1000d_DryO2_100Ori.str 20h@1000d_DryO2_100Ori.str
+###### At 900 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 hour##
+diffuse time=60 temperature=900 dryO2
+struct outfile=1h@900d_DryO2_100Ori.str
+extract name="1h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=900 dryO2
+struct outfile=3h@900d_DryO2_100Ori.str
+extract name="3h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=900 dryO2
+struct outfile=6h@900d_DryO2_100Ori.str
+extract name="6h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=900 dryO2
+struct outfile=8h@900d_DryO2_100Ori.str
+extract name="8h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=900 dryO2
+struct outfile=10h@900d_DryO2_100Ori.str
+extract name="10h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=900 dryO2
+struct outfile=20h@900d_DryO2_100Ori.str
+extract name="20h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 40 hours##
+diffuse time=1200 temperature=900 dryO2
+struct outfile=40h@900d_DryO2_100Ori.str
+extract name="40h@900D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 3h@900d_DryO2_100Ori.str 6h@900d_DryO2_100Ori.str 8h@900d_DryO2_100Ori.str 10h@900d_DryO2_100Ori.str 20h@900d_DryO2_100Ori.str 40h@900d_DryO2_100Ori.str
+
+###### At 800 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 3 hours##
+diffuse time=180 temperature=800 dryO2
+struct outfile=3h@800d_DryO2_100Ori.str
+extract name="3h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=800 dryO2
+struct outfile=6h@800d_DryO2_100Ori.str
+extract name="6h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=800 dryO2
+struct outfile=8h@800d_DryO2_100Ori.str
+extract name="8h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=800 dryO2
+struct outfile=10h@800d_DryO2_100Ori.str
+extract name="10h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=800 dryO2
+struct outfile=20h@800d_DryO2_100Ori.str
+extract name="20h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 40 hours##
+diffuse time=1200 temperature=800 dryO2
+struct outfile=40h@800d_DryO2_100Ori.str
+extract name="40h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 60 hours##
+diffuse time=1200 temperature=800 dryO2
+struct outfile=60h@800d_DryO2_100Ori.str
+extract name="60h@800D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 3h@800d_DryO2_100Ori.str 8h@800d_DryO2_100Ori.str 10h@800d_DryO2_100Ori.str 20h@800d_DryO2_100Ori.str 40h@800d_DryO2_100Ori.str 60h@800d_DryO2_100Ori.str
+###### At 700 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 40 hours##
+
+diffuse time=2400 temperature=700 dryO2
+struct outfile=40h@700d_DryO2_100Ori.str
+extract name="40h@700D" thickness oxide mat.occno=1 x.val=1
+## Process for 60 hours##
+diffuse time=1200 temperature=700 dryO2
+struct outfile=60h@700d_DryO2_100Ori.str
+extract name="60h@700D" thickness oxide mat.occno=1 x.val=1
+## Process for 80 hours##
+diffuse time=1200 temperature=700 dryO2
+struct outfile=80h@700d_DryO2_100Ori.str
+extract name="80h@700D" thickness oxide mat.occno=1 x.val=1
+## Process for 100 hours##
+diffuse time=1200 temperature=700 dryO2
+struct outfile=100h@700d_DryO2_100Ori.str
+extract name="100h@700D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 40h@700d_DryO2_100Ori.str 60h@700d_DryO2_100Ori.str 80h@700d_DryO2_100Ori.str 100h@700d_DryO2_100Ori.str
+
+
+###########################Dry oxide in 111 structures
+go athena
+################### OXIDATION PROCESS FOR DRY AMBIENT AND <111> ORIENTATION (CHLORINE AND PRESSURE IS SET TO DEFAULT) ######################
+###### At 1200 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 10 minutes##
+diffuse time=10 temperature=1200 dryO2
+struct outfile=10min@1200d_DryO2_111Ori.str
+extract name="10min@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=50 temperature=1200 dryO2
+struct outfile=1h@1200d_DryO2_111Ori.str
+extract name="1h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+
+diffuse time=120 temperature=1200 dryO2
+struct outfile=3h@1200d_DryO2_111Ori.str
+extract name="3h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1200 dryO2
+struct outfile=6h@1200d_DryO2_111Ori.str
+extract name="6h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=1200 dryO2
+struct outfile=8h@1200d_DryO2_111Ori.str
+extract name="8h@1200D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=1200 dryO2
+struct outfile=10h@1200d_DryO2_111Ori.str
+extract name="10h@1200D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 10min@1200d_DryO2_111Ori.str 1h@1200d_DryO2_111Ori.str 3h@1200d_DryO2_111Ori.str 6h@1200d_DryO2_111Ori.str 8h@1200d_DryO2_111Ori.str 10h@1200d_DryO2_111Ori.str
+###### At 1100 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 10 minutes##
+
+diffuse time=10 temperature=1100 dryO2
+struct outfile=10min@1100d_DryO2_111Ori.str
+extract name="10min@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=50 temperature=1100 dryO2
+struct outfile=1h@1100d_DryO2_111Ori.str
+extract name="1h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1100 dryO2
+struct outfile=3h@1100d_DryO2_111Ori.str
+extract name="3h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1100 dryO2
+struct outfile=6h@1100d_DryO2_111Ori.str
+extract name="6h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=1100 dryO2
+struct outfile=8h@1100d_DryO2_111Ori.str
+extract name="8h@1100D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=1100 dryO2
+struct outfile=10h@1100d_DryO2_111Ori.str
+extract name="10h@1100D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 10min@1100d_DryO2_111Ori.str 1h@1100d_DryO2_111Ori.str 3h@1100d_DryO2_111Ori.str 6h@1100d_DryO2_111Ori.str 8h@1100d_DryO2_111Ori.str 10h@1100d_DryO2_111Ori.str
+###### At 1000 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 10 minutes##
+diffuse time=10 temperature=1000 dryO2
+struct outfile=10min@1000d_DryO2_111Ori.str
+extract name="10min@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=50 temperature=1000 dryO2
+struct outfile=1h@1000d_DryO2_111Ori.str
+extract name="1h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1000 dryO2
+struct outfile=3h@1000d_DryO2_111Ori.str
+extract name="3h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1000 dryO2
+struct outfile=6h@1000d_DryO2_111Ori.str
+extract name="6h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=1000 dryO2
+struct outfile=8h@1000d_DryO2_111Ori.str
+extract name="8h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=1000 dryO2
+struct outfile=10h@1000d_DryO2_111Ori.str
+extract name="10h@1000D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=1000 dryO2
+struct outfile=20h@1000d_DryO2_111Ori.str
+extract name="20h@1000D" thickness oxide mat.occno=1 x.val=1
+
+# Plotting the Result
+tonyplot -st 1h@1000d_DryO2_111Ori.str 3h@1000d_DryO2_111Ori.str 6h@1000d_DryO2_111Ori.str 8h@1000d_DryO2_111Ori.str 10h@1000d_DryO2_111Ori.str 20h@1000d_DryO2_111Ori.str
+###### At 900 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 hour##
+diffuse time=60 temperature=900 dryO2
+struct outfile=1h@900d_DryO2_111Ori.str
+extract name="1h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=900 dryO2
+struct outfile=3h@900d_DryO2_111Ori.str
+extract name="3h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=900 dryO2
+struct outfile=6h@900d_DryO2_111Ori.str
+extract name="6h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=900 dryO2
+struct outfile=8h@900d_DryO2_111Ori.str
+extract name="8h@900D" thickness oxide mat.occno=1 x.val=1
+
+## Process for 10 hours##
+diffuse time=120 temperature=900 dryO2
+struct outfile=10h@900d_DryO2_111Ori.str
+extract name="10h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=900 dryO2
+struct outfile=20h@900d_DryO2_111Ori.str
+extract name="20h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 40 hours##
+diffuse time=1200 temperature=900 dryO2
+struct outfile=40h@900d_DryO2_111Ori.str
+extract name="40h@900D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 3h@900d_DryO2_111Ori.str 6h@900d_DryO2_111Ori.str 8h@900d_DryO2_111Ori.str 10h@900d_DryO2_111Ori.str 20h@900d_DryO2_111Ori.str 40h@900d_DryO2_111Ori.str
+###### At 800 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 3 hours##
+diffuse time=180 temperature=800 dryO2
+
+struct outfile=3h@800d_DryO2_111Ori.str
+extract name="3h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=800 dryO2
+struct outfile=6h@800d_DryO2_111Ori.str
+extract name="6h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 8 hours##
+diffuse time=120 temperature=800 dryO2
+struct outfile=8h@800d_DryO2_111Ori.str
+extract name="8h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=120 temperature=800 dryO2
+struct outfile=10h@800d_DryO2_111Ori.str
+extract name="10h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=800 dryO2
+struct outfile=20h@800d_DryO2_111Ori.str
+extract name="20h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 40 hours##
+diffuse time=1200 temperature=800 dryO2
+struct outfile=40h@800d_DryO2_111Ori.str
+extract name="40h@800D" thickness oxide mat.occno=1 x.val=1
+## Process for 60 hours##
+diffuse time=1200 temperature=800 dryO2
+struct outfile=60h@800d_DryO2_111Ori.str
+extract name="60h@800D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 3h@800d_DryO2_111Ori.str 8h@800d_DryO2_111Ori.str 10h@800d_DryO2_111Ori.str 20h@800d_DryO2_111Ori.str 40h@800d_DryO2_111Ori.str 60h@800d_DryO2_111Ori.str
+
+###### At 700 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 40 hours##
+diffuse time=2400 temperature=700 dryO2
+struct outfile=40h@700d_DryO2_111Ori.str
+extract name="40h@700D" thickness oxide mat.occno=1 x.val=1
+## Process for 60 hours##
+diffuse time=1200 temperature=700 dryO2
+struct outfile=60h@700d_DryO2_111Ori.str
+extract name="60h@700D" thickness oxide mat.occno=1 x.val=1
+## Process for 80 hours##
+diffuse time=1200 temperature=700 dryO2
+struct outfile=80h@700d_DryO2_111Ori.str
+extract name="80h@700D" thickness oxide mat.occno=1 x.val=1
+## Process for 100 hours##
+diffuse time=1200 temperature=700 dryO2
+struct outfile=100h@700d_DryO2_111Ori.str
+extract name="100h@700D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 40h@700d_DryO2_111Ori.str 60h@700d_DryO2_111Ori.str 80h@700d_DryO2_111Ori.str 100h@700d_DryO2_111Ori.str
+
+########Wet oxidation in 100 structures
+go athena
+
+################### OXIDATION PROCESS FOR WET AMBIENT AND <100> ORIENTATION (CHLORINE AND PRESSURE IS SET TO DEFAULT) ######################
+###### At 1250 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 20 minutes##
+diffuse time=20 temperature=1250 wetO2
+struct outfile=20min@1250d_WetO2_100Ori.str
+extract name="20min@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=40 temperature=1250 wetO2
+struct outfile=1h@1250d_WetO2_100Ori.str
+extract name="1h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1250 wetO2
+struct outfile=3h@1250d_WetO2_100Ori.str
+extract name="3h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1250 wetO2
+struct outfile=6h@1250d_WetO2_100Ori.str
+extract name="6h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=240 temperature=1250 wetO2
+struct outfile=10h@1250d_WetO2_100Ori.str
+extract name="10h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=1250 wetO2
+struct outfile=20h@1250d_WetO2_100Ori.str
+
+extract name="20h@1250D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 20min@1250d_WetO2_100Ori.str 1h@1250d_WetO2_100Ori.str 3h@1250d_WetO2_100Ori.str 6h@1250d_WetO2_100Ori.str 10h@1250d_WetO2_100Ori.str 20h@1250d_WetO2_100Ori.str
+###### At 1050 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 20 minutes##
+diffuse time=20 temperature=1050 wetO2
+struct outfile=20min@1050d_WetO2_100Ori.str
+extract name="20min@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=40 temperature=1050 wetO2
+struct outfile=1h@1050d_WetO2_100Ori.str
+extract name="1h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1050 wetO2
+struct outfile=3h@1050d_WetO2_100Ori.str
+extract name="3h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1050 wetO2
+struct outfile=6h@1050d_WetO2_100Ori.str
+
+extract name="6h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=240 temperature=1050 wetO2
+struct outfile=10h@1050d_WetO2_100Ori.str
+extract name="10h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=1050 wetO2
+struct outfile=20h@1050d_WetO2_100Ori.str
+extract name="20h@1050D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 20min@1050d_WetO2_100Ori.str 1h@1050d_WetO2_100Ori.str 3h@1050d_WetO2_100Ori.str 6h@1050d_WetO2_100Ori.str 10h@1050d_WetO2_100Ori.str 20h@1050d_WetO2_100Ori.str
+###### At 900 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 20 minutes##
+diffuse time=20 temperature=900 wetO2
+struct outfile=20min@900d_WetO2_100Ori.str
+extract name="20min@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=40 temperature=900 wetO2
+struct outfile=1h@900d_WetO2_100Ori.str
+extract name="1h@900D" thickness oxide mat.occno=1 x.val=1
+
+## Process for 3 hours##
+diffuse time=120 temperature=900 wetO2
+struct outfile=3h@900d_WetO2_100Ori.str
+extract name="3h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=900 wetO2
+struct outfile=6h@900d_WetO2_100Ori.str
+extract name="6h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=240 temperature=900 wetO2
+struct outfile=10h@900d_WetO2_100Ori.str
+extract name="10h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=900 wetO2
+struct outfile=20h@900d_WetO2_100Ori.str
+extract name="20h@900D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 20min@900d_WetO2_100Ori.str 1h@900d_WetO2_100Ori.str 3h@900d_WetO2_100Ori.str 6h@900d_WetO2_100Ori.str 10h@900d_WetO2_100Ori.str 20h@900d_WetO2_100Ori.str
+
+################Wet oxidation in 111 structures
+go athena
+################### OXIDATION PROCESS FOR WET AMBIENT AND <111> ORIENTATION (CHLORINE AND PRESSURE IS SET TO DEFAULT) ######################
+###### At 1250 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+
+# Initialazing Oxidation Process
+## Process for 20 minutes##
+diffuse time=20 temperature=1250 wetO2
+struct outfile=20min@1250d_WetO2_111ori.str
+extract name="20min@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=40 temperature=1250 wetO2
+struct outfile=1h@1250d_WetO2_111ori.str
+extract name="1h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1250 wetO2
+struct outfile=3h@1250d_WetO2_111ori.str
+extract name="3h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1250 wetO2
+struct outfile=6h@1250d_WetO2_111ori.str
+extract name="6h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=240 temperature=1250 wetO2
+struct outfile=10h@1250d_WetO2_111ori.str
+extract name="10h@1250D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=1250 wetO2
+struct outfile=20h@1250d_WetO2_111ori.str
+extract name="20h@1250D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 20min@1250d_WetO2_111ori.str 1h@1250d_WetO2_111ori.str 3h@1250d_WetO2_111ori.str 6h@1250d_WetO2_111ori.str 10h@1250d_WetO2_111ori.str 20h@1250d_WetO2_111ori.str
+###### At 1050 Degree #####
+# Mesh Definition
+
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 20 minutes##
+diffuse time=20 temperature=1050 wetO2
+struct outfile=20min@1050d_WetO2_111ori.str
+extract name="20min@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=40 temperature=1050 wetO2
+struct outfile=1h@1050d_WetO2_111ori.str
+extract name="1h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=1050 wetO2
+struct outfile=3h@1050d_WetO2_111ori.str
+extract name="3h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=1050 wetO2
+struct outfile=6h@1050d_WetO2_111ori.str
+extract name="6h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=240 temperature=1050 wetO2
+struct outfile=10h@1050d_WetO2_111ori.str
+extract name="10h@1050D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=1050 wetO2
+struct outfile=20h@1050d_WetO2_111ori.str
+extract name="20h@1050D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+
+tonyplot -st 20min@1050d_WetO2_111ori.str 1h@1050d_WetO2_111ori.str 3h@1050d_WetO2_111ori.str 6h@1050d_WetO2_111ori.str 10h@1050d_WetO2_111ori.str 20h@1050d_WetO2_111ori.str
+###### At 900 Degree #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 2.0 spacing=0.25
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.25
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 20 minutes##
+diffuse time=20 temperature=900 wetO2
+struct outfile=20min@900d_WetO2_111ori.str
+extract name="20min@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 1 hour##
+diffuse time=40 temperature=900 wetO2
+struct outfile=1h@900d_WetO2_111ori.str
+extract name="1h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 3 hours##
+diffuse time=120 temperature=900 wetO2
+struct outfile=3h@900d_WetO2_111ori.str
+extract name="3h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 6 hours##
+diffuse time=180 temperature=900 wetO2
+struct outfile=6h@900d_WetO2_111ori.str
+extract name="6h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 10 hours##
+diffuse time=240 temperature=900 wetO2
+struct outfile=10h@900d_WetO2_111ori.str
+
+extract name="10h@900D" thickness oxide mat.occno=1 x.val=1
+## Process for 20 hours##
+diffuse time=600 temperature=900 wetO2
+struct outfile=20h@900d_WetO2_111ori.str
+extract name="20h@900D" thickness oxide mat.occno=1 x.val=1
+# Plotting the Result
+tonyplot -st 20min@900d_WetO2_111ori.str 1h@900d_WetO2_111ori.str 3h@900d_WetO2_111ori.str 6h@900d_WetO2_111ori.str 10h@900d_WetO2_111ori.str 20h@900d_WetO2_111ori.str
+تحلیل در شرایط اثرگذاری HCl بر اکسیداسیون
+go athena
+################### OXIDATION PROCESS FOR DRY AMBIENT @ DIFFRENT HCL AND TEMPERATURES ######################
+###### FOR HCL 0 @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 hcl=0
+struct outfile=0@900@1min.str
+extract name="0@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=0
+struct outfile=0@900@2mins.str
+extract name="0@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=0
+struct outfile=0@900@3mins.str
+extract name="0@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 0 @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2 hcl=0
+struct outfile=0@1000@1min.str
+extract name="0@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=0
+struct outfile=0@1000@2mins.str
+extract name="0@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=0
+struct outfile=0@1000@3mins.str
+extract name="0@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 0 @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2 hcl=0
+struct outfile=0@1100@1min.str
+extract name="0@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=0
+struct outfile=0@1100@2mins.str
+extract name="0@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=0
+struct outfile=0@1100@3mins.str
+extract name="0@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+#-------------------#
+#-------------------#
+###### FOR HCL 1 @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 hcl=1
+struct outfile=1@900@1min.str
+extract name="1@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=1
+struct outfile=1@900@2mins.str
+extract name="1@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=1
+struct outfile=1@900@3mins.str
+
+extract name="1@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 1 @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2 hcl=1
+struct outfile=1@1000@1min.str
+extract name="1@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=1
+struct outfile=1@1000@2mins.str
+extract name="1@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=1
+struct outfile=1@1000@3mins.str
+extract name="1@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 1 @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2 hcl=1
+struct outfile=1@1100@1min.str
+extract name="1@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=1
+struct outfile=1@1100@2mins.str
+extract name="1@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=1
+struct outfile=1@1100@3mins.str
+extract name="1@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+#-------------------#
+#-------------------#
+###### FOR HCL 5 @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 hcl=5
+struct outfile=5@900@1min.str
+extract name="5@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=5
+struct outfile=5@900@2mins.str
+extract name="5@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=5
+struct outfile=5@900@3mins.str
+extract name="5@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 5 @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2 hcl=5
+struct outfile=5@1000@1min.str
+extract name="5@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=5
+struct outfile=5@1000@2mins.str
+extract name="5@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=5
+struct outfile=5@1000@3mins.str
+extract name="5@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 5 @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2 hcl=5
+struct outfile=5@1100@1min.str
+extract name="5@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=5
+struct outfile=5@1100@2mins.str
+
+extract name="5@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=5
+struct outfile=5@1100@3mins.str
+extract name="5@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+#-------------------#
+#-------------------#
+###### FOR HCL 10 @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 hcl=10
+struct outfile=10@900@1min.str
+extract name="10@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=10
+struct outfile=10@900@2mins.str
+extract name="10@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 hcl=10
+struct outfile=10@900@3mins.str
+extract name="10@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 10 @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2 hcl=10
+struct outfile=10@1000@1min.str
+extract name="10@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=10
+struct outfile=10@1000@2mins.str
+extract name="10@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2 hcl=10
+struct outfile=10@1000@3mins.str
+extract name="10@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR HCL 10 @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2 hcl=10
+struct outfile=10@1100@1min.str
+extract name="10@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=10
+struct outfile=10@1100@2mins.str
+extract name="10@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2 hcl=10
+struct outfile=10@1100@3mins.str
+extract name="10@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+
+###### anylis of impact of crystal direction on oxidation 
+go athena
+################### OXIDATION PROCESS FOR DRY AMBIENT @ DIFFRENT ORIENTATION AND TEMPERATURES ######################
+###### FOR 100 SILICON @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2
+struct outfile=100@900@1min.str
+extract name="100@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2
+struct outfile=100@900@2mins.str
+extract name="100@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2
+struct outfile=100@900@3mins.str
+extract name="100@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR 100 SILICON @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=100@1000@1min.str
+extract name="100@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=100@1000@2mins.str
+extract name="100@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=100@1000@3mins.str
+extract name="100@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR 100 SILICON @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=100@1100@1min.str
+extract name="100@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=100@1100@2mins.str
+extract name="100@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=100@1100@3mins.str
+extract name="100@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+#-------------------#
+#-------------------#
+###### FOR 110 SILICON @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=110 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2
+struct outfile=110@900@1min.str
+extract name="110@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2
+struct outfile=110@900@2mins.str
+extract name="110@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2
+
+struct outfile=110@900@3mins.str
+extract name="110@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR 110 SILICON @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=110 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=110@1000@1min.str
+extract name="110@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=110@1000@2mins.str
+extract name="110@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=110@1000@3mins.str
+extract name="110@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR 110 SILICON @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=110 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=110@1100@1min.str
+extract name="110@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=110@1100@2mins.str
+extract name="110@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=110@1100@3mins.str
+extract name="110@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+#-------------------#
+#-------------------#
+###### FOR 111 SILICON @ 900 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2
+struct outfile=111@900@1min.str
+extract name="111@900@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2
+struct outfile=111@900@2mins.str
+extract name="110@900@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2
+struct outfile=111@900@3mins.str
+extract name="111@900@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR 110 SILICON @ 1000 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=111@1000@1min.str
+extract name="111@1000@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=111@1000@2mins.str
+extract name="111@1000@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1000 dryO2
+struct outfile=111@1000@3mins.str
+extract name="111@1000@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### FOR 111 SILICON @ 1100 DEGREE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=111 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=111@1100@1min.str
+extract name="111@1100@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=111@1100@2mins.str
+
+extract name="111@1100@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=1100 dryO2
+struct outfile=111@1100@3mins.str
+extract name="111@1100@3mins" thickness oxide mat.occno=1 x.val=0.5
+
+#############analyze impact of gas presure on oxidation
+go athena
+################### OXIDATION PROCESS FOR DRY AMBIENT AND <100> ORIENTATION @ 900 DEGREE ######################
+###### At 1 ATMOSPHERE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 press=1 hcl=0
+struct outfile=press1@1min.str
+extract name="press1@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 press=1 hcl=0
+struct outfile=press1@2mins.str
+extract name="press1@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 press=1 hcl=0
+struct outfile=press1@3mins.str
+extract name="press1@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### At 5 ATMOSPHERE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 press=5 hcl=0
+struct outfile=press5@1min.str
+extract name="press5@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 press=5 hcl=0
+struct outfile=press5@2mins.str
+extract name="press5@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 press=5 hcl=0
+struct outfile=press5@3mins.str
+extract name="press5@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### At 10 ATMOSPHERE #####
+# Mesh Definition
+
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 press=10 hcl=0
+struct outfile=press10@1min.str
+extract name="press10@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 press=10 hcl=0
+struct outfile=press10@2mins.str
+extract name="press10@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 press=10 hcl=0
+struct outfile=press10@3mins.str
+extract name="press10@3mins" thickness oxide mat.occno=1 x.val=0.5
+###### At 20 ATMOSPHERE #####
+# Mesh Definition
+line x loc = 0.0 spacing=0.02
+line x loc = 1.0 spacing=0.02
+line y loc = 0.0 spacing = 0.02
+line y loc = 4.0 spacing = 0.1
+# Wafer Definition
+init silicon orientation=100 c.phos=3e15 two.d
+# Initialazing Oxidation Process
+## Process for 1 minute##
+diffuse time=1 temperature=900 dryO2 press=20 hcl=0
+struct outfile=press20@1min.str
+extract name="press20@1min" thickness oxide mat.occno=1 x.val=0.5
+## Process for 2 minutes##
+diffuse time=1 temperature=900 dryO2 press=20 hcl=0
+struct outfile=press20@2mins.str
+extract name="press20@2mins" thickness oxide mat.occno=1 x.val=0.5
+## Process for 3 minutes##
+diffuse time=1 temperature=900 dryO2 press=20 hcl=0
+struct outfile=press20@3mins.str
+extract name="press20@3mins" thickness oxide mat.occno=1 x.val=0.5
